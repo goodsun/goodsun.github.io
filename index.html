@@ -81,6 +81,34 @@
             color: #586069;
             font-size: 14px;
         }
+        .repo-card-with-logo {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+        .repo-card-with-logo img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
+        .repo-card-content {
+            flex: 1;
+        }
+        .repo-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 8px;
+            font-size: 13px;
+        }
+        .repo-links a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        .repo-links a:hover {
+            text-decoration: underline;
+        }
         a { color: #0366d6; }
         a:hover { text-decoration: underline; }
     </style>
@@ -109,8 +137,30 @@
         <h2>Open Source Projects</h2>
         <div class="repo-grid">
             <div class="repo-card">
-                <h3><a href="https://github.com/goodsun/sharenote" target="_blank">sharenote</a></h3>
-                <p>Share note for Alexa - Voice-enabled note sharing application</p>
+                <div class="repo-card-with-logo">
+                    <img src="image/sharenote.png" alt="ShareNote Logo">
+                    <div class="repo-card-content">
+                        <h3><a href="https://github.com/goodsun/sharenote" target="_blank">sharenote</a></h3>
+                        <p>Share note for Alexa - Voice-enabled note sharing application</p>
+                        <div class="repo-links">
+                            <a href="https://sharenote.bon-soleil.com/" target="_blank">Website</a>
+                            <a href="https://www.amazon.co.jp/bonsoleil-shareNOTE/dp/B0FJB315KK/" target="_blank">Alexa Skill Store</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="repo-card">
+                <div class="repo-card-with-logo">
+                    <img src="image/web3cms.png" alt="Web3CMS Logo">
+                    <div class="repo-card-content">
+                        <h3><a href="https://github.com/goodsun/web3cms" target="_blank">web3cms</a></h3>
+                        <p>Decentralized Content Management System for Web3</p>
+                        <div class="repo-links">
+                            <a href="https://d3r0s5p0bjw36t.cloudfront.net/" target="_blank">Creator's guild</a>
+                            <a href="https://d3rn53vp7wmqi7.cloudfront.net/" target="_blank">for developer</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="repo-card">
                 <h3><a href="https://github.com/goodsun/mvclip" target="_blank">mvclip</a></h3>
@@ -119,10 +169,6 @@
             <div class="repo-card">
                 <h3><a href="https://github.com/goodsun/fullstack_serverless_cdk" target="_blank">fullstack_serverless_cdk</a></h3>
                 <p>Full-stack serverless application template using AWS CDK</p>
-            </div>
-            <div class="repo-card">
-                <h3><a href="https://github.com/goodsun/web3cms" target="_blank">web3cms</a></h3>
-                <p>Decentralized Content Management System for Web3</p>
             </div>
             <div class="repo-card">
                 <h3><a href="https://github.com/goodsun/vibeSettings" target="_blank">vibeSettings</a></h3>
